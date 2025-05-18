@@ -75,7 +75,7 @@ def traduzir_codigo(codigo, origem, destino):
             elif destino == 'ruby':
                 traduzidas.append("else")
 
-        # FOR (Python range)
+        # FOR 
         elif origem == 'python' and "for" in linha_strip and "in range" in linha_strip:
             match = re.match(r"for (\w+) in range\((\d+)\):", linha_strip)
             if match:
