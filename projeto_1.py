@@ -116,7 +116,7 @@ def traduzir_codigo(codigo, origem, destino):
 
     return "\n".join(traduzidas)
 
-# Função chamada ao clicar no botão
+
 def ao_traduzir():
     entrada = entrada_texto.get("1.0", tk.END)
     origem = origem_combo.get()
@@ -138,11 +138,11 @@ estilo.configure("TButton", background="#3a3a3a", foreground="white", font=("Con
 estilo.configure("TCombobox", fieldbackground="#2e2e2e", background="#2e2e2e", foreground="white")
 
 # Widgets
-ttk.Label(janela, text="Linguagem de origem:").pack(pady=5)
+ttk.Label(janela, text="Linguagem inicial:").pack(pady=5)
 origem_combo = ttk.Combobox(janela, values=["Python", "JavaScript", "Java", "Ruby"])
 origem_combo.pack()
 
-ttk.Label(janela, text="Linguagem de destino:").pack(pady=5)
+ttk.Label(janela, text="Linguagem final:").pack(pady=5)
 destino_combo = ttk.Combobox(janela, values=["Python", "JavaScript", "Java", "Ruby"])
 destino_combo.pack()
 
